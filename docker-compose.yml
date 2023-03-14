@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: mysql
+    container_name: api_db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: dockyard_db
+      MYSQL_USER: stormit
+      MYSQL_PASSWORD: Stormit
+      MYSQL_ROOT_PASSWORD: StormIT.2019
+    ports:
+      - "3306:3306"
