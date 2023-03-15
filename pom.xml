@@ -44,6 +44,16 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>com.jelastic</groupId>
+                <artifactId>jelastic-maven-plugin</artifactId>
+                <version>1.9.5</version>
+                <configuration>
+                    <apiToken>730ef6e68570494485260242a220bced9057635f</apiToken>
+                    <environment>env_dockyard</environment>
+                    <api_hoster>env-2661123.jcloud.ik-server.com</api_hoster>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
